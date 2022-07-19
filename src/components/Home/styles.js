@@ -31,7 +31,7 @@ export const trailerBlockClass = css`
 
 export const logoContainerClass = css`
   text-align: center;
-  margin-top: 18vh;
+  margin-top: 12vh;
   position: relative;
 `;
 
@@ -170,7 +170,7 @@ export const clientLogsClass = css`
   align-items: flex-end;
 
   img {
-    height: 40px;
+    height: 35px;
     width: auto;
   }
 
@@ -178,5 +178,9 @@ export const clientLogsClass = css`
     flex-wrap: wrap;
     gap: 15px;
     width: 90%;
+
+    img {
+      height: 25px;
+    }
   }
 `;

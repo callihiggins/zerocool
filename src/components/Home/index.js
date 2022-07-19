@@ -1,7 +1,7 @@
 import React from 'react';
 import Modal from 'react-responsive-modal';
 import 'react-responsive-modal/styles.css';
-// import NavLite from './NavLite';
+import NavLite from './NavLite';
 import { css } from '@emotion/react'
 import * as styles from  './styles';
 import * as sharedstyles from  '../shared/styles';
@@ -39,7 +39,8 @@ class Home extends React.Component {
 	render() {
 		return (
 			// <Page updateActive={this.props.updateActive} name="home">
-      //   <NavLite />
+			<>
+        <NavLite />
 				<div css={styles.containerClass}>
 					<Modal
 						open={this.state.modalIsOpen}
@@ -112,6 +113,7 @@ class Home extends React.Component {
 						<source src={introVideo}/>
 					</video>
 				</div>
+			</>
 			// </Page>
 		)
 	}

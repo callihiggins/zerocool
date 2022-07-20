@@ -23,6 +23,9 @@ const PageHelmet = ({ keywords, title, image }) => {
         <meta property="og:type" content="website"/>
         <meta property="og:description" content="ZeroCool Media is a multidisciplinary production company"/>
         <meta property="og:image" content={SITE_IMAGE}/>
+        <meta property="og:image:secure_url" content={SITE_IMAGE} />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:alt" content="ZeroCool Logo" />
         <meta property="og:image:width" content="1080"/>
         <meta property="og:image:height" content="1080"/>
         <meta itemprop="name" content="ZeroCool Media"/>

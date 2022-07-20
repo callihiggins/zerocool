@@ -5,6 +5,7 @@ import styled from 'styled-components';
 export const jobContainerClass = css`
   display: flex;
   gap: 40px;
+  color: ${theme.colors.navy};
 
   @media (max-width: ${theme.breakpoints.large}px) {
     flex-direction: column;

@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Helmet } from 'react-helmet';
-import SITE_IMAGE from '../images/logo_with_black_text.jpg'
+import SITE_IMAGE from './assets/images/logo_with_black_text.jpg';
 
 const PageHelmet = ({ keywords, title, image }) => {
   return (

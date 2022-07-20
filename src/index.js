@@ -8,6 +8,7 @@ import {
 import { ThemeProvider } from 'styled-components';
 import ApolloClient  from 'apollo-boost';
 import { ApolloProvider } from '@apollo/react-hooks';
+import GA from './GoogleAnalytics'
 import theme from './theme'
 import './index.css';
 import Home from './components/Home';
@@ -25,6 +26,7 @@ root.render(
     <ApolloProvider client={client}>
       <ThemeProvider theme={theme}>
         <Router>
+        { GA.init() && <GA.RouteTracker /> }
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route path="/team" element={<Team />} />

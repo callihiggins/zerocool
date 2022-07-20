@@ -1,5 +1,6 @@
 import React from 'react';
 import Nav from '../shared/Nav';
+import Footer from '../shared/Footer';
 import { useQuery } from '@apollo/react-hooks';
 import { gql } from 'apollo-boost';
 import Person from './Person';
@@ -37,6 +38,7 @@ const Team = () => {
           {teamData}
         </div>
       </div>
+      <Footer />
     </>
   )
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import Nav from '../shared/Nav';
+import Footer from '../shared/Footer';
 import { useQuery } from '@apollo/react-hooks';
 import { gql } from 'apollo-boost';
 import Job from './Job';
@@ -32,6 +33,7 @@ const Jobs = () => {
           {jobsData}
         </div>
       </div>
+      <Footer />
     </>
   )
 }

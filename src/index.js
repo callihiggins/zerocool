@@ -12,7 +12,6 @@ import ReactGA from "react-ga4";
 import GoogleAnalytics from './GoogleAnalytics'
 import theme from './theme'
 import './index.css';
-import Helmet from './Helmet'
 import Home from './components/Home';
 import Team from './components/Team';
 import Jobs from './components/Jobs';
@@ -36,7 +35,6 @@ const initGA = (options = {}) => {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div className="app">
-    <Helmet />
     <ApolloProvider client={client}>
       <ThemeProvider theme={theme}>
         <Router>

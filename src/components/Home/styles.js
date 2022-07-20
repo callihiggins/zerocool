@@ -43,13 +43,14 @@ export const logoClass = css`
 `;
 
 export const taglineClass = css`
-  font-weight: 700;
   font-size: 18px;
   text-align: center;
   text-transform: uppercase;
   margin-top: 5vh;
   color: ${theme.colors.white};
   line-height: 26px;
+  font-family: ${theme.fonts.nexaLight};
+  letter-spacing: 2px;
 
   @media (max-width: ${theme.breakpoints.large}px) {
     font-size: 17px;

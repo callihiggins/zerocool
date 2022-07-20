@@ -41,9 +41,10 @@ export const NavUl = styled.ul`
   li {
     width: 120px;
     list-decoration: none;
-    font-weight: 900;
     cursor: pointer;
     position: relative;
+    font-family: ${theme.fonts.nexaLight};
+    letter-spacing: 2px;
 
     a {
       color: ${theme.colors.white};

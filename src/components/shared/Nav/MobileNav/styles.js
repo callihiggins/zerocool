@@ -13,7 +13,7 @@ export const NavItem = styled.li`
 
   ${props => props.active && `
   a {
-    border-bottom: 2px solid ${theme.colors.green};
+    border-bottom: 2px solid ${theme.colors.blue};
   }
   `}
 `;

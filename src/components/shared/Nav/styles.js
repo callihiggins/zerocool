@@ -70,6 +70,7 @@ export const NavEl = styled.nav`
   height: 30px;
   z-index: -1;
   align-items: center;
+  margin-right: 20px;
   @media (max-width: ${theme.breakpoints.large}px) {
     width: 100%;
   }
@@ -139,26 +140,6 @@ export const NavItem = styled.li`
       }
     }
   `}
-`;
-
-export const socialMediaIconsClass = css`
-  display: inline-flex;
-  justify-content: flex-end;
-  text-align: right;
-  width: calc(15% - 20px);
-  padding-right: 10px;
-  align-items: center;
-
-  button {
-    cursor: pointer;
-  }
-`;
-
-export const iconClass = css`
-  color: ${theme.colors.navy};
-  font-size: 18px;
-  font-weight: 700;
-  margin: 0 10px;
 `;
 
 export const logoClass = css`

@@ -5,14 +5,10 @@ import styled from 'styled-components';
 export const aboutContainerClass = css`
   width: 100%;
   padding-top: 80px;
-
-  @media (min-width: ${theme.breakpoints.extraLarge}px) {
-    max-height: calc(100vh - 135px);
-  }
+  min-height: calc(100vh - 275px);
 
   @media (max-width: ${theme.breakpoints.large}px) {
-    height: auto;
-    padding-bottom: 40px;
+    min-height: calc(100vh - 240px);
   }
 `;
 

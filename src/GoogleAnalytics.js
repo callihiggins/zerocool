@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import ReactGA from "react-ga4";
-import { Route } from 'react-router-dom';
 
 class GoogleAnalytics extends Component {
     componentDidMount () {
@@ -37,28 +35,4 @@ class GoogleAnalytics extends Component {
     }
 }
 
-GoogleAnalytics.propTypes = {
-    location: PropTypes.shape({
-        pathname: PropTypes.string,
-        search: PropTypes.string
-    }).isRequired,
-    options: PropTypes.object
-};
-
-const RouteTracker = () => <Route component={GoogleAnalytics} />;
-
-const init = (options = {}) => {
-    const isGAEnabled = process.env.NODE_ENV === 'production';
-
-    if (isGAEnabled) {
-        ReactGA.initialize(process.env.GA_TRACKING_ID);
-    }
-
-    return isGAEnabled;
-};
-
-export default {
-    GoogleAnalytics,
-    RouteTracker,
-    init
-};
+export default GoogleAnalytics;

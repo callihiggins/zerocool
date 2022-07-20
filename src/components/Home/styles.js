@@ -39,7 +39,6 @@ export const logoClass = css`
  width: 35%;
  @media (max-width: ${theme.breakpoints.large}px) {
   width: 80%;
-  margin-top: 11vh;
  }
 `;
 
@@ -168,7 +167,7 @@ export const clientLogsClass = css`
   display: flex;
   width: 70%;
   justify-content: space-around;
-  margin: 12vh auto 0 auto;
+  margin: 15vh auto 0 auto;
   align-items: flex-end;
 
   img {

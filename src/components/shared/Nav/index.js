@@ -1,22 +1,23 @@
 import React, { useState } from 'react';
-import Modal from 'react-modal';
+import { css } from '@emotion/react';
 import { withTheme } from 'styled-components';
 import { Link } from "react-router-dom";
-import MobileNav from '../../shared/Nav/MobileNav';
+import MobileNav from './MobileNav';
+import logo from '../../../assets/images/logo_horionztal_white_text.png';
 import * as styles from  './styles';
+import * as sharedstyles from  '../../shared/styles';
 import { NavUl, NavItem, NavEl, HeaderContainer, StyledModal } from './styles';
 
-const scrollIntoView = el => {
-  setTimeout(() => {
-    el.scrollIntoView({ behavior: 'smooth' });
-   }, 500);
-}
-
-
 const Nav = props => {
+
 	return (
     <>
       <HeaderContainer>
+        <div css={styles.logoContainerClass}>
+          <a href="/">
+            <img src={logo} alt="ZeroCool" css={styles.logoClass}/>
+          </a>
+        </div>
         <NavEl>
           <NavUl>
             <NavItem active={props.active === 'jobs'}>
@@ -30,14 +31,10 @@ const Nav = props => {
             </NavItem>
           </NavUl>
         </NavEl>
+        
       </HeaderContainer>
       <MobileNav active={props.active}/>
     </>
   )}
 
-Nav.defaultProps = {
-  activeLink: 'home',
-  fadeIn: false,
-}
-
-export default withTheme(Nav);
+export default Nav;

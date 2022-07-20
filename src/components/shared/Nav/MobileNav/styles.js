@@ -6,36 +6,28 @@ export const NavItem = styled.li`
   text-transform: uppercase;
   margin: 20px 0;
   a {
-    color: ${theme.colors.cream};
+    color: ${theme.colors.white};
     text-decoration: none;
     font-size: 16px;
   }
 
   ${props => props.active && `
   a {
-    border-bottom: 2px solid ${theme.colors.pink};
+    border-bottom: 2px solid ${theme.colors.green};
   }
   `}
 `;
 
-export const socialMediaIconsClass = css`
-  width: 60%;
-  margin-top: 50px;
-  display: flex !important;
-  justify-content: space-between;
-`;
+export const logoContainerClass = css`
+  margin-left: 25px;
+  display: flex;
 
-export const iconClass = css`
-  color: ${theme.colors.cream};
-  font-size: 22px;
-  font-weight: 700;
 `;
 
 export const logoClass = css`
-  width: 100px;
+  width: 150px;
   height: auto;
-  margin-left: 25px;
-  margin-top: 25px;
+  display: block;
 `;
 
 export const navClass = css`
@@ -45,12 +37,14 @@ export const navClass = css`
   height: 60px;;
   background: ${theme.colors.navy};
   display: flex;
-  flex-direction: column;
   justify-content: center;
   width: 100%;
   display: none;
 
   @media (max-width: ${theme.breakpoints.large}px) {
-    display: block;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
   }
 `;

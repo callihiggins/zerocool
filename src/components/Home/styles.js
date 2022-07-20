@@ -170,7 +170,7 @@ export const clientLogsClass = css`
   align-items: flex-end;
 
   img {
-    height: 35px;
+    height: 25px;
     width: auto;
   }
 

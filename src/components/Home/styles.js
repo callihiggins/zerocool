@@ -39,7 +39,7 @@ export const logoClass = css`
  width: 35%;
  @media (max-width: ${theme.breakpoints.large}px) {
   width: 80%;
-  margin-top: 15vh;
+  margin-top: 11vh;
  }
 `;
 
@@ -54,7 +54,7 @@ export const taglineClass = css`
   letter-spacing: 2px;
 
   @media (max-width: ${theme.breakpoints.large}px) {
-    font-size: 16px;
+    font-size: 12px;
   }
 `;
 

@@ -8,7 +8,7 @@ import * as sharedstyles from '../shared/styles.js';
 
 const JOBS_DATA = gql`
 {
-  jobPostingCollection {
+  jobPostingCollection(order: [sys_firstPublishedAt_ASC]) {
 		items {
 			title
 			description {

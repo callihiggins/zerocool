@@ -4,10 +4,11 @@ import { useQuery } from '@apollo/react-hooks';
 import { gql } from 'apollo-boost';
 import Person from './Person';
 import * as styles from './styles.js'
+import * as sharedstyles from '../shared/styles.js';
 
 const TEAM_DATA = gql`
 {
-  teamMemberCollection(limit: 16) {
+  teamMemberCollection {
 		items {
 			name
 			bio {
@@ -31,11 +32,9 @@ const Team = () => {
     <>
       <Nav active="team"></Nav>
       <div css={styles.aboutContainerClass}>
-        <div css={styles.teamBannerClass}>Meet our team</div>
-        <div css={styles.teamContainerClass}>
-          <div css={styles.peopleContainerClass}>
-            {teamData}
-          </div>
+        <div css={sharedstyles.titleBannerClass}>Meet our team</div>
+        <div css={styles.peopleContainerClass}>
+          {teamData}
         </div>
       </div>
     </>

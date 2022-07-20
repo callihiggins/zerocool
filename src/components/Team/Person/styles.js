@@ -7,7 +7,6 @@ export const PersonContainer = styled.div`
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  margin-bottom: 40px;
   flex-basis: 21%;
   width: 200px;
   text-align: center;

@@ -12,6 +12,7 @@ import theme from './theme'
 import './index.css';
 import Home from './components/Home';
 import Team from './components/Team';
+import Jobs from './components/Jobs';
 
 const client = new ApolloClient({
   uri: `https://graphql.contentful.com/content/v1/spaces/${process.env.REACT_APP_SPACE_ID}?access_token=${process.env.REACT_APP_CONTENTFUL_TOKEN}`
@@ -26,6 +27,7 @@ root.render(
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route path="/team" element={<Team />} />
+            <Route path="/jobs" element={<Jobs />} />
           </Routes>
         </Router>
       </ThemeProvider>

@@ -2,7 +2,7 @@ import { css } from '@emotion/react';
 import { default as theme } from '../../theme';
 import styled from 'styled-components';
 
-export const aboutContainerClass = css`
+export const jobsSectionContainerClass = css`
   width: 100%;
   padding-top: 80px;
 
@@ -16,7 +16,7 @@ export const aboutContainerClass = css`
   }
 `;
 
-export const peopleContainerClass = css`
+export const jobsContainerClass = css`
   display: flex;
   flex-wrap: wrap;
   padding: 40px 40px 0 40px;
@@ -36,16 +36,3 @@ export const peopleContainerClass = css`
   }
 `;
 
-export const teamBannerClass = css`
-  text-align: center;
-  text-transform: uppercase;
-  color: ${theme.colors.navy};
-  font-size: 22px;
-  letter-spacing: 1.5px;
-  font-weight: 400;
-  margin-top: 25px;
-
-  @media (max-width: ${theme.breakpoints.large}px) {
-    top: 75px;
-  }
-`;

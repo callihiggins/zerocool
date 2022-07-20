@@ -28,7 +28,7 @@ const Jobs = () => {
     <>
       <Nav active="jobs"></Nav>
       <div css={styles.jobsSectionContainerClass}>
-        <div css={sharedstyles.titleBannerClass}>We're Hiring</div>
+        <div css={sharedstyles.titleBannerClass}>We just hired a few new team members, but check back later to join our growing team!</div>
         <div css={styles.jobsContainerClass}>
           {jobsData}
         </div>

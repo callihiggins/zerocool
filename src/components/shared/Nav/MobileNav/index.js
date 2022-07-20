@@ -18,11 +18,13 @@ const Nav = props => {
 
 	return (
     <div css={[sharedstyles.hideDesktop, styles.navClass]}>
-      <div css={styles.logoContainerClass}>
-        <a href="/">
-          <img src={logo} alt="ZeroCool" css={styles.logoClass}/>
-        </a>
-      </div>
+      {!props.hideLogo && (
+        <div css={styles.logoContainerClass}>
+          <a href="/">
+            <img src={logo} alt="ZeroCool" css={styles.logoClass}/>
+          </a>
+        </div>
+      )}
       <MobileMenu isOpen={open} customBurgerIcon={ <img src={hamburger} /> } right width={ '70%' } >
         <nav>
           <ul >

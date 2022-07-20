@@ -78,6 +78,11 @@ export const modalContainerClass = css`
   padding-top: 50px;
   justify-content: space-evenly;
 
+  @media (max-width: ${theme.breakpoints.large}px) {
+    flex-direction: column;
+    justify-content: center;
+  }
+
 `;
 
 export const bioClass = css`
@@ -89,6 +94,10 @@ export const bioClass = css`
   a {
     color: ${theme.colors.white};
   }
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    width: 90%;
+  }
 `;
 
 export const modalPhotoClass = css`
@@ -99,4 +108,8 @@ export const modalPhotoClass = css`
 
 export const leftSideClass = css `
   width: 300px;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    width: 90%;
+  } 
 `;

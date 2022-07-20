@@ -31,7 +31,7 @@ const Nav = props => {
           </NavUl>
         </NavEl>
       </HeaderContainer>
-      <MobileNav active={props.active}/>
+      <MobileNav active={props.active} hideLogo={true}/>
     </>
   )}
 

@@ -29,7 +29,7 @@ class GoogleAnalytics extends Component {
             location: `${location.origin}${page}`,
             ...this.props.options
         });
-        ReactGA.pageview(page);
+        ReactGA.send({hitType: "pageview", page: page});
     }
 
     render () {

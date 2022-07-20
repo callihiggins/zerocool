@@ -31,7 +31,7 @@ export const logoClass = css`
 `;
 
 export const navClass = css`
-  position: absolute;
+  position: sticky;
   top: 0;
   z-index: 300;
   height: 60px;;

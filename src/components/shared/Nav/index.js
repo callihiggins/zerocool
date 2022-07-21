@@ -15,7 +15,7 @@ const Nav = props => {
       <HeaderContainer>
         <div css={styles.logoContainerClass}>
           <a href="/">
-            <img src={logo} alt="ZeroCool" css={styles.logoClass}/>
+            <img src={logo} alt="Zerocool" css={styles.logoClass}/>
           </a>
         </div>
         <NavEl>

@@ -21,7 +21,7 @@ const Nav = props => {
       {!props.hideLogo && (
         <div css={styles.logoContainerClass}>
           <a href="/">
-            <img src={logo} alt="ZeroCool" css={styles.logoClass}/>
+            <img src={logo} alt="Zerocool" css={styles.logoClass}/>
           </a>
         </div>
       )}

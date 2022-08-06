@@ -6,12 +6,12 @@ import MobileNav from './MobileNav';
 import logo from '../../../assets/images/logo_horionztal_white_text.png';
 import * as styles from  './styles';
 import * as sharedstyles from  '../../shared/styles';
-import { NavUl, NavItem, NavEl, HeaderContainer, StyledModal } from './styles';
+import { NavToggleEl, NavUl, NavItem, NavEl, HeaderContainer, StyledModal } from './styles';
 
 const Nav = props => {
 
 	return (
-    <>
+    <NavToggleEl onHome={props.onHome}>
       <HeaderContainer>
         <div css={styles.logoContainerClass}>
           <a href="/">
@@ -34,7 +34,7 @@ const Nav = props => {
         
       </HeaderContainer>
       <MobileNav active={props.active}/>
-    </>
+    </NavToggleEl>
   )}
 
 export default Nav;

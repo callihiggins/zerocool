@@ -23,6 +23,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+
 }
 
 code {
@@ -36,4 +38,56 @@ code {
     margin: 0 !important;
     box-sizing: border-box;
   }
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.fadedNav {
+  opacity: 0;
+  transition: opacity 200ms;
+}
+
+.nav-enter {
+  opacity: 1 !important;
+  transition: opacity 500ms;
+  z-index: 120;
+  position: fixed;
+}
+
+.nav-enter-done{
+  opacity: 1 !important;
+  transition: opacity 200ms;
+  z-index: 120;
+  position: fixed;
+} 
+
+.nav-enter-active {
+  opacity: 1 !important;
+  transition: opacity 200ms;
+  z-index: 120;
+  position: fixed;
+}
+.nav-exit {
+  opacity: 0;
+  transition: opacity 200ms;
+  z-index: 120;
+  position: fixed;
+}
+.nav-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
+  z-index: 120;
+  position: fixed;
+}
+
+.nav-exit-done {
+  opacity: 0;
+  transition: opacity 200ms;
+  z-index: 120;
+  position: fixed;
 }

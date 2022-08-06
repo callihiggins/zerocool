@@ -7,6 +7,10 @@ const duration = '.2s';
 const distance = '8px';
 const easeOutBack = 'cubic-bezier(0.175, 0.885, 0.320, 1.275)';
 
+export const NavToggleEl = styled.div`
+  opacity: ${props => props.onHome ? '0' : 1};
+`;
+
 export const HeaderContainer = styled.div`
   display: flex;
   background: ${theme.colors.navy};

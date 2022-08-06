@@ -7,7 +7,6 @@ export const containerClass = css`
   font-size: 14px;
   position: relative;
   z-index: 100;
-  padding-bottom: 20px;
   font-family: ${theme.fonts.nexaLight};
 
   a {
@@ -25,11 +24,12 @@ export const horizontalLineClass = css`
 
 export const bottomContainerClass = css`
   display: flex;
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
   justify-content: space-between;
-  padding: 25px 15px;
-
+  padding: 25px 2.5% 45px 2.5%;
+  background: ${theme.colors.white};
+  box-sizing: border-box;
   @media (max-width: ${theme.breakpoints.large}px) {
     width: 90%;
   }

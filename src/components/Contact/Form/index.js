@@ -26,7 +26,7 @@ function ContactForm() {
           errors={state.errors}
         />
         <label htmlFor="name">
-          Comapany
+          Company
         </label>
         <input
           id="company"

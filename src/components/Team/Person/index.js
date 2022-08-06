@@ -24,7 +24,7 @@ const Person = ({ data }) => {
 	
   return (
     <PersonContainer onClick={openModal} order={order}>
-      <Modal
+      {/* <Modal
         open={modalIsOpen}
         onClose={closeModal}
         onRequestClose={closeModal}
@@ -60,7 +60,7 @@ const Person = ({ data }) => {
             { documentToReactComponents(bio.json) }
           </div>
         </div>
-      </Modal>
+      </Modal> */}
       <div css={styles.photoClass}>
         <img src={url} alt={photoTitle}/>
       </div>

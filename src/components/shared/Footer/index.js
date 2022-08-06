@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../../assets/images/logo_with_black_text.jpg';
+import logo from '../../../assets/images/logo_with_black_text.png';
 import * as styles from  './styles';
 import * as sharedstyles from  '../styles';
 import { default as theme } from '../../../theme';

@@ -6,7 +6,7 @@ export const PersonContainer = styled.div`
   order: ${props => props.order};
   display: flex;
   flex-direction: column;
-  cursor: pointer;
+  // cursor: pointer;
   flex-basis: 21%;
   width: 200px;
   text-align: center;

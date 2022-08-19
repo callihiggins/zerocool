@@ -2,6 +2,8 @@ import React from 'react';
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 import Modal from 'react-responsive-modal';
 import 'react-responsive-modal/styles.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import NavLite from '../NavLite';
 import { css } from '@emotion/react'
 import * as styles from  './styles';
@@ -67,16 +69,17 @@ class Home extends React.Component {
 							<div css={styles.logoContainerClass}>
 								<img src={logo} alt="Zero Cool logo" css={styles.logoClass}/>
 							</div>
-						
 							<div css={styles.taglineClass}>
 								A multidisciplinary production company
 							</div>
-					
 							<button css={styles.trailerCTAClass} onClick={this.openModal}>
 								<div css={styles.playerButtonClass}>
 									<PlayIcon />
 								</div>
 							</button>
+							<div css={styles.downArrowsClass}>
+								<FontAwesomeIcon icon={faChevronDown}/>
+							</div>
 						</Parallax>
 					</div>
 					<div css={styles.videoOverlayClass} />

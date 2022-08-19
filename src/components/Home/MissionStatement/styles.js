@@ -3,12 +3,13 @@ import { default as theme } from '../../../theme';
 import styled from 'styled-components';
 
 export const missionContainerClass = css`
-  width: 60%;
+  width: 75%;
   margin: 0 auto;
+  height: 120vh;
 `;
 
 export const textClass = css`
-  font-size: 50px;
+  font-size: 4.5vw;
   font-family: ${theme.fonts.nexaLight};
   position: relative;
   color: ${theme.colors.white};
@@ -22,11 +23,12 @@ export const textClass = css`
 `;
 
 export const footNotesContainerClass = css`
-  margin-top: 40px;
   color: ${theme.colors.white};
   font-family: ${theme.fonts.nexaLight};
   font-size: 20px;
   line-height: 22px;
+  min-height: 180px;
+  margin-top: 40px;
   ul {
     display: inline-block;
     padding-left: 20px;

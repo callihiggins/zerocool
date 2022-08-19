@@ -11,7 +11,7 @@ import { NavToggleEl, NavUl, NavItem, NavEl, HeaderContainer, StyledModal } from
 const Nav = props => {
 
 	return (
-    <NavToggleEl onHome={props.onHome}>
+    <NavToggleEl isOnHome={props.isOnHome}>
       <HeaderContainer>
         <div css={styles.logoContainerClass}>
           <a href="/">

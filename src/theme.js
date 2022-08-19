@@ -13,5 +13,9 @@ export default {
   fonts: {
     nexaBold: 'nexa_bold',
     nexaLight: 'nexa_light'
+  },
+  componentHeights: {
+    footer: '130',
+    nav: '70'
   }
 }

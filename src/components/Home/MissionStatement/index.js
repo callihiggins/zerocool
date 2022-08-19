@@ -34,18 +34,17 @@ const MissionStatement = () => {
             <div css={styles.textClass} id="missionStatement">
               We create <StrongText onClick={() => showFootNote(0)} highlight={showFootNotes && footNotesIndex === 0}> emotionally intelligent production environments</StrongText><sup onClick={() => showFootNote(0)} >1</sup> that <StrongText onClick={() => showFootNote(1)} highlight={showFootNotes && footNotesIndex === 1}>champion</StrongText><sup onClick={() => showFootNote(1)}>2</sup> the work of <StrongText onClick={() => showFootNote(2)} highlight={showFootNotes && footNotesIndex === 2}>creatives in any medium</StrongText><sup onClick={() => showFootNote(2)}>3</sup>.
             </div>
-            {showFootNotes && (
               <div css={styles.footNotesContainerClass}>
-                <TextTransition springConfig={presets.wobbly} css={styles.textTransitionContainerClass}>
-                  <div css={styles.footNotesTextClass}>
-                    <sup>{footNotesIndex + 1}</sup>
-                    <div css={styles.footNotesBulletClass} dangerouslySetInnerHTML={{__html: FOOTNOTES[footNotesIndex]}} />
-                  </div>
-                </TextTransition>
+                {showFootNotes && (
+                  <TextTransition springConfig={presets.wobbly} css={styles.textTransitionContainerClass}>
+                    <div css={styles.footNotesTextClass}>
+                      <sup>{footNotesIndex + 1}</sup>
+                      <div css={styles.footNotesBulletClass} dangerouslySetInnerHTML={{__html: FOOTNOTES[footNotesIndex]}} />
+                    </div>
+                  </TextTransition>
+                )}
               </div>
-            )}
           </Parallax>
-
         </div>
       </ParallaxProvider>
     </>

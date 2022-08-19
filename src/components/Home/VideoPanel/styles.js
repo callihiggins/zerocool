@@ -15,8 +15,8 @@ export const containerClass = css`
 export const logoBlockClass = css`
   z-index: 5;
   width: 100%;
-  margin-top: -50px;
-
+  text-align: center;
+  margin-top: 50px;
   @media (max-width: ${theme.breakpoints.large}px) {
     padding: 0 15px;
   }
@@ -35,6 +35,7 @@ export const trailerBlockClass = css`
 export const logoContainerClass = css`
   text-align: center;
   position: relative;
+  margin-top: 50px; 
 `;
 
 export const logoClass = css`
@@ -92,7 +93,6 @@ export const trailerCTAClass = css`
 export const playerButtonClass = css`
   width: 85px;
   display: inline-block;
-  margin-right: 15px;
 
   @media (max-width: ${theme.breakpoints.large}px) {
     svg {
@@ -104,6 +104,15 @@ export const playerButtonClass = css`
         fill: ${theme.colors.white};
       }
     }
+  }
+`;
+
+export const downArrowsClass = css`
+  z-index: 5;
+  height: 40px;
+  margin-top: 10vh;
+  svg {
+    color: ${theme.colors.white};
   }
 `;
 

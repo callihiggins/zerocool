@@ -5,7 +5,7 @@ import styled from 'styled-components';
 export const missionContainerClass = css`
   width: 75%;
   margin: 0 auto;
-  height: 120vh;
+  padding-top: 20vh;
 `;
 
 export const textClass = css`

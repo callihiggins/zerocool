@@ -24,7 +24,7 @@
     "install": "^0.13.0",
     "lodash.debounce": "^4.0.8",
     "node-sass": "^7.0.1",
-    "npm": "^8.14.0",
+    "npm": "^8.19.1",
     "react": "^18.2.0",
     "react-app-rewired": "^2.2.1",
     "react-burger-menu": "^3.0.8",
@@ -35,6 +35,7 @@
     "react-player": "^2.10.1",
     "react-recaptcha": "^2.3.10",
     "react-responsive-modal": "^6.2.0",
+    "react-reveal": "^1.2.2",
     "react-router-dom": "^6.3.0",
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
@@ -42,6 +43,7 @@
     "react-text-transition": "^3.0.2",
     "react-transition-group": "^4.4.5",
     "styled-components": "^5.3.5",
+    "uikit": "^3.15.7-dev.05c3b3f6c",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

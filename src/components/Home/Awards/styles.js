@@ -9,7 +9,7 @@ export const awardsContainerClass = css`
   border-bottom: 1px solid ${theme.colors.white};
   width: 80%;
   margin: 0 auto;
-  height: 50vh;
+  height: 42.5vh;
   box-sizing: border-box;
   align-items: center;
 `;

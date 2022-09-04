@@ -1,4 +1,5 @@
 import React from 'react';
+import Slide from 'react-reveal/Slide';
 import { css } from '@emotion/react';
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 import * as styles from  './styles';
@@ -17,48 +18,55 @@ import Snackable from '../../../assets/images/snackable.png';
 const Clients = () => {
 
   return (
-    <div css={styles.clientsContainerClass}>
-      <div css={styles.clientDetailsClass}>
-        <div css={styles.headerClass}>
-          Our clients
+    <Slide left duration={1500}>
+    {/* <ParallaxProvider> */}
+      <>
+      <div css={styles.clientsContainerClass}>
+        <div css={styles.clientDetailsClass}>
+          <div css={styles.headerClass}>
+            Our clients
+          </div>
+          <div css={styles.clientDescriptionClass}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </div>
         </div>
-        <div css={styles.clientDescriptionClass}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        <div css={styles.clientLogsClass}>
+          <a href="https://www.alliancebernstein.com/corporate/en/home.html" target="_blank" rel="noopener">
+            <img src={ABCorp} alt="Alliance Bernstein Logo" />
+          </a>
+          <a href="https://www.spotify.com" target="_blank" rel="noopener noreferrer">
+            <img src={Spotify} alt="Spotify Logo" />
+          </a>
+          <a href="https://www.audible.com/" target="_blank" rel="noopener noreferrer">
+            <img src={Audible} alt="Audible Logo" />
+          </a>
+          <a href="https://www.bricartsmedia.org/" target="_blank" rel="noopener noreferrer">
+            <img src={Bric} alt="Bric TV Logo" />
+          </a>
+          <a href="https://www.loreal.com/en/" target="_blank" rel="noopener noreferrer">
+            <img src={Loreal} alt="Loreal Logo" />
+          </a>
+          <a href="https://www.topic.com/" target="_blank" rel="noopener noreferrer">
+            <img src={Topic} alt="Topic Logo" />
+          </a>
+          <a href="https://www.scienceinteractive.com/" target="_blank" rel="noopener noreferrer">
+            <img src={ScienceInteractive} alt="Science Interactive Logo" />
+          </a>
+          <a href="https://www.uninterrupted.com/" target="_blank" rel="noopener noreferrer">
+            <img src={UninterruptedLogo} alt="Uninterrupted Logo" />
+          </a>
+          <a href="https://snackable.ai/" target="_blank" rel="noopener noreferrer">
+            <img src={Snackable} alt="Snackable Logo" />
+          </a>
+          <a href="https://dressforsuccess.org/" target="_blank" rel="noopener noreferrer">
+            <img src={DressForSuccess} alt="Dress For Success Logo" />
+          </a>
         </div>
       </div>
-      <div css={styles.clientLogsClass}>
-        <a href="https://www.alliancebernstein.com/corporate/en/home.html" target="_blank" rel="noopener">
-          <img src={ABCorp} alt="Alliance Bernstein Logo" />
-        </a>
-        <a href="https://www.spotify.com" target="_blank" rel="noopener noreferrer">
-          <img src={Spotify} alt="Spotify Logo" />
-        </a>
-        <a href="https://www.audible.com/" target="_blank" rel="noopener noreferrer">
-          <img src={Audible} alt="Audible Logo" />
-        </a>
-        <a href="https://www.bricartsmedia.org/" target="_blank" rel="noopener noreferrer">
-          <img src={Bric} alt="Bric TV Logo" />
-        </a>
-        <a href="https://www.loreal.com/en/" target="_blank" rel="noopener noreferrer">
-          <img src={Loreal} alt="Loreal Logo" />
-        </a>
-        <a href="https://www.topic.com/" target="_blank" rel="noopener noreferrer">
-          <img src={Topic} alt="Topic Logo" />
-        </a>
-        <a href="https://www.scienceinteractive.com/" target="_blank" rel="noopener noreferrer">
-          <img src={ScienceInteractive} alt="Science Interactive Logo" />
-        </a>
-        <a href="https://www.uninterrupted.com/" target="_blank" rel="noopener noreferrer">
-          <img src={UninterruptedLogo} alt="Uninterrupted Logo" />
-        </a>
-        <a href="https://snackable.ai/" target="_blank" rel="noopener noreferrer">
-          <img src={Snackable} alt="Snackable Logo" />
-        </a>
-        <a href="https://dressforsuccess.org/" target="_blank" rel="noopener noreferrer">
-          <img src={DressForSuccess} alt="Dress For Success Logo" />
-        </a>
-      </div>
-    </div>
+      </>
+      {/* </ParallaxProvider>  */}
+    </Slide>
+
   )
 
 }

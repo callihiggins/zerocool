@@ -15,6 +15,9 @@ import Contact from './Contact';
 import * as styles from  './styles';
 import * as sharedstyles from  '../shared/styles';
 
+import 'uikit/dist/css/uikit.min.css';
+import 'uikit/dist/js/uikit.min.js';
+
 const Home = () => {
 
   const [videoRef, videoInView] = useInView({
@@ -26,8 +29,6 @@ const Home = () => {
   })
 
   const [activeMenu, updateActive] = useState('video');
-
-  console.log(activeMenu)
 
   useEffect(() => {
 
@@ -49,7 +50,6 @@ const Home = () => {
 
 
   return (
-    // <Page updateActive={this.props.updateActive} name="home">
     <>
       <CSSTransition
         in={activeMenu !== 'video'}
@@ -62,18 +62,23 @@ const Home = () => {
         <VideoPanel />
       </div>
       <div css={styles.scrollOverClass} ref={overlayRef} >
-        <MissionStatement  />
-        {/* <ParallaxProvider>
-          <Parallax speed={-10}> */}
-            <Clients />
-            <Awards />
-          {/* </Parallax>
-        </ParallaxProvider> */}
-        <Contact /> 
+        <MissionStatement />
+        <div id="laurels-container" className="uk-height-viewport-2">
+          <div className="uk-height-viewport" uk-sticky="start: -70xpx; end: #laurels-container">
+              <>
+                <Clients />
+                <Awards />
+              </>
+          </div>
+        </div>
+        <ParallaxProvider>
+          <Parallax speed={-10}>
+            <Contact /> 
+          </Parallax>
+        </ParallaxProvider>
         <Footer darkMode={true}/>
       </div>
     </>
-    // </Page>
   )	
 }
 

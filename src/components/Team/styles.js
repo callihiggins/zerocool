@@ -6,7 +6,7 @@ export const aboutContainerClass = css`
   width: 100%;
   padding-top: 80px;
   min-height: calc(100vh - 275px);
-
+  // background: ${theme.colors.navy};
   @media (max-width: ${theme.breakpoints.large}px) {
     min-height: calc(100vh - 240px);
   }

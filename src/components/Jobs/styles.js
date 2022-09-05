@@ -5,7 +5,7 @@ import styled from 'styled-components';
 export const JobsContainer = styled.div`
   width: 100%;
   padding-top: 80px;
-  min-height: calc(100vh - 275px);
+  min-height: calc(100vh - 243px);
   ${props => !props.hasJobs && `
     display: flex;
     align-items: center;
@@ -57,7 +57,7 @@ export const headerClass = css`
   width: 80%;
   margin: 0 auto;
   padding-bottom: 10px;
-  border-bottom: 1px solid ${theme.colors.blue};
+  border-bottom: 1px solid ${theme.colors.navy};
   padding-top: ${theme.componentHeights.nav}px;
   padding-top: 70px;
   padding-bottom: 20px;

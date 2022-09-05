@@ -38,7 +38,7 @@ export const headerClass = css`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid ${theme.colors.blue};
+  border-bottom: 1px solid ${theme.colors.navy};
   
   @media (max-width: ${theme.breakpoints.large}px) {
     flex-direction: column;

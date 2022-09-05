@@ -52,7 +52,7 @@ const Team = () => {
           {manyPeople}
         </div>
       </div>
-      <Footer />
+      <Footer darkMode={true}/>
     </>
   )
 }

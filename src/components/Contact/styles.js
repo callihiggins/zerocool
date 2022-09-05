@@ -3,8 +3,10 @@ import { default as theme } from '../../theme';
 
 export const contactContainerClass = css`
   width: 100%;
-  padding-top: 80px;
+  padding-top: 70px;
   min-height: calc(100vh - 275px);
+  background: ${theme.colors.navy};
+  color: ${theme.colors.white};
 
   @media (max-width: ${theme.breakpoints.large}px) {
     min-height: calc(100vh - 240px);
@@ -13,7 +15,7 @@ export const contactContainerClass = css`
 `;
 
 export const textClass = css`
-  color: ${theme.colors.navy};
+  color: ${theme.colors.blue};
   font-size: 12vw;
   width: 80%;
   text-indent: -140px;
@@ -61,9 +63,9 @@ export const formContainerClass = css`
   width: 40%;
   margin: 0 auto;
   margin-top: 40px;
-  color: ${theme.colors.navy};
+  color: ${theme.colors.white};
   font-family: ${theme.fonts.nexaLight};
-  border: 1px solid  ${theme.colors.navy};
+  border: 1px solid  ${theme.colors.white};
   border-radius: 3px;
   padding: 20px;
 
@@ -83,12 +85,14 @@ export const formContainerClass = css`
   }
 
   input {
+    background: ${theme.colors.navy};
     font-family: ${theme.fonts.nexaLight};
+    color: ${theme.colors.white};
     margin-bottom: 40px;
     padding: 7px 14px;
     padding-left: 2px;
     border: 0;
-    border-bottom: 1px solid ${theme.colors.navy};
+    border-bottom: 1px solid ${theme.colors.white};
     width: 100%;
     border-radius: 30x;
     font-size: 16px;
@@ -100,16 +104,16 @@ export const formContainerClass = css`
 
   textarea {
     height: 100px;
+    background: ${theme.colors.navy};
     font-family: ${theme.fonts.nexaLight};
     font-size: 16px;
-    border: 1px solid ${theme.colors.navy};
+    border: 1px solid ${theme.colors.white};
     border-radius: 3px;
     padding-left: 5px;
     resize: none;
     margin-bottom: 25px;
     padding: 7px 14px;
     padding-left: 4px;
-    border-bottom: 1px solid ${theme.colors.navy};
     width: 100%;
     border-radius: 30x;
     box-sizing: border-box;
@@ -125,7 +129,7 @@ export const formContainerClass = css`
     color: ${theme.colors.white};
     outline: 0;
     box-shadow: none;
-    border: 1px solid #000000;
+    border: 1px solid ${theme.colors.white};
     font-size: 18px;
     cursor: pointer;
     margin-top: 25px;

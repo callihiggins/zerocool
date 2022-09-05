@@ -4,8 +4,11 @@ import styled from 'styled-components';
 
 export const JobsContainer = styled.div`
   width: 100%;
-  padding-top: 80px;
+  padding-top: 70px;
   min-height: calc(100vh - 275px);
+  background: ${theme.colors.navy};
+  color: ${theme.colors.white};
+
   ${props => !props.hasJobs && `
     display: flex;
     align-items: center;
@@ -22,6 +25,8 @@ export const jobsContainerClass = css`
   display: flex;
   flex-wrap: wrap;
   padding: 40px 40px 0 40px;
+  color: ${theme.colors.white};
+
   justify-content: space-between;
   width: 80%;
   margin: 0 auto;
@@ -33,7 +38,7 @@ export const jobsContainerClass = css`
 `;
 
 export const textClass = css`
-  color: ${theme.colors.navy};
+  color: ${theme.colors.blue};
   font-size: 12vw;
   width: 80%;
   text-indent: -140px;
@@ -71,7 +76,6 @@ export const headerClass = css`
 export const descriptionClass = css`
   width: 35%;
   justify-content: space-between;
-  color: ${theme.colors.navy};
   font-family: ${theme.fonts.nexaLight};
   font-size: 28px;
 
@@ -82,7 +86,7 @@ export const descriptionClass = css`
 
 export const jobTitleClass = css`
   text-align: center;
-  color: ${theme.colors.navy};
+  color: ${theme.colors.white};
   font-size: 36px;
   letter-spacing: 1.5px;
   font-weight: 400;

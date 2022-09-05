@@ -5,7 +5,7 @@ import styled from 'styled-components';
 export const jobContainerClass = css`
   display: flex;
   gap: 40px;
-  color: ${theme.colors.navy};
+  color: ${theme.colors.white};
 
   @media (max-width: ${theme.breakpoints.large}px) {
     flex-direction: column;
@@ -15,7 +15,7 @@ export const jobContainerClass = css`
 
 export const titleClass = css`
   text-transform: uppercase;
-  color: ${theme.colors.white};
+  color: ${theme.colors.navy};
   font-size: 21px;
   letter-spacing: 3px;
   min-width: 230px;

@@ -46,6 +46,10 @@ code {
   left: 0;
 }
 
+video {
+  max-width: none !important;
+}
+
 
 .fadedNav {
   opacity: 0;

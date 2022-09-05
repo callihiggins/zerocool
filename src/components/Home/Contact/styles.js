@@ -32,10 +32,10 @@ export const buttonContainerClass = css`
 `;
 
 export const buttonClass = css`
-  background: ${theme.colors.white};
-  color: ${theme.colors.navy};
+  background: ${theme.colors.navy};
+  color: ${theme.colors.white};
+  display: flex;
   cursor: pointer;
-  padding: 15px 20px;
   box-shadow: none;
   font-size: 18px;
   font-family: ${theme.fonts.nexaLight};
@@ -44,10 +44,33 @@ export const buttonClass = css`
   text-align: center;
   border: 1px solid ${theme.colors.white};
   border-radius: 3px;
+  position: relative;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
 
   &:hover {
     text-decoration: none;
-    color: ${theme.colors.navy};
+    color: ${theme.colors.white};
   }
 `;
 
+export const buttonLabelClass = css`
+  padding: 0 15px;
+  text-align: center;
+  width: calc(100% - 60px);
+`;
+
+export const iconContainerClass = css`
+  background: ${theme.colors.white};
+  width: 60px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    color:  ${theme.colors.navy};
+    transform: rotate(-45deg);
+  }
+`;

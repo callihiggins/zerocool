@@ -5,5 +5,6 @@ export const scrollOverClass = css`
   background: ${theme.colors.navy};
   z-index: 10;
   position: relative;
+  overflow-x: hidden;
 `;
 

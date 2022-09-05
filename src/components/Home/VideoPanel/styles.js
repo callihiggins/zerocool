@@ -93,6 +93,11 @@ export const trailerCTAClass = css`
 export const playerButtonClass = css`
   width: 85px;
   display: inline-block;
+  transition: all .4s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 
   @media (max-width: ${theme.breakpoints.large}px) {
     svg {

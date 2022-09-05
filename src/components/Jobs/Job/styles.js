@@ -31,6 +31,7 @@ export const titleClass = css`
 
   @media (max-width: ${theme.breakpoints.large}px) {
     min-width: 100%;
+    position: static;
 
     div {
       padding: 10px 20px;

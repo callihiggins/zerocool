@@ -12,12 +12,25 @@ export const awardsContainerClass = css`
   height: 42.5vh;
   box-sizing: border-box;
   align-items: center;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    flex-direction: column;
+  }
 `;
 
 export const awardDetailsClass = css`
   width: 35%;
   padding-right: 40px;
   border-right: 1px solid ${theme.colors.white};
+
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    width: 100%;
+    border-right: 0;
+    padding-right: 0;
+    text-align: center;
+    padding-top: 25px;
+  }
 `;
 
 export const headerClass = css`
@@ -29,6 +42,11 @@ export const awardDescriptionClass = css`
   color: ${theme.colors.white};
   margin-top: 15px;
   font-family: ${theme.fonts.nexaLight};
+
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    display: none;
+  }
 `;
 
 export const awardLogsClass = css`
@@ -41,5 +59,12 @@ export const awardLogsClass = css`
   img {
     height: 5vw;
     width: auto;
+  }
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    width: 100%;
+    img {
+      height: 15vw;
+    }
   }
 `;

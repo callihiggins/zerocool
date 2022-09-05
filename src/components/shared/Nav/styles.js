@@ -9,6 +9,12 @@ const easeOutBack = 'cubic-bezier(0.175, 0.885, 0.320, 1.275)';
 
 export const NavToggleEl = styled.div`
   opacity: ${props => props.isOnHome ? '0' : 1};
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
 `;
 
 export const HeaderContainer = styled.div`

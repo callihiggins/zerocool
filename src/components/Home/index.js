@@ -50,7 +50,7 @@ const Home = () => {
 
 
   return (
-    <>
+    <div css={styles.homeContainerClass}>
       <CSSTransition
         in={activeMenu !== 'video'}
         timeout={1000}
@@ -78,7 +78,7 @@ const Home = () => {
         </ParallaxProvider>
         <Footer darkMode={true}/>
       </div>
-    </>
+    </div>
   )	
 }
 

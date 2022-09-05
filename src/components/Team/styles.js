@@ -21,7 +21,7 @@ export const headerClass = css`
   width: 80%;
   margin: 0 auto;
   padding-bottom: 10px;
-  border-bottom: 1px solid ${theme.colors.blue};
+  border-bottom: 1px solid ${theme.colors.navy};
   padding-top: ${theme.componentHeights.nav}px;
   padding-top: 70px;
   padding-bottom: 20px;

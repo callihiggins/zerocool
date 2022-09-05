@@ -8,3 +8,9 @@ export const scrollOverClass = css`
   overflow-x: hidden;
 `;
 
+export const homeContainerClass = css`
+  @media (max-width: ${theme.breakpoints.large}px) {
+    background: ${theme.colors.navy};
+  }
+`;
+

@@ -11,6 +11,11 @@ export const contactContainerClass = css`
   align-items: center;
   box-sizing: border-box;
   justify-content: space-around;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    flex-direction: column;
+    padding: 0;
+  }
 `;
 
 export const textClass = css`
@@ -22,6 +27,15 @@ export const textClass = css`
   margin-left: 100px;
   line-height: 12vw;
   padding-top: ${theme.componentHeights.nav}px;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    text-indent: 0;
+    margin-left: 0;
+    font-size: 22vw;
+    line-height: 20vw;
+    text-align: center;
+
+  }
 
 `;
 
@@ -38,7 +52,6 @@ export const buttonClass = css`
   cursor: pointer;
   box-shadow: none;
   font-size: 18px;
-  font-family: ${theme.fonts.nexaLight};
   border: 0;
   text-decoration: none;
   text-align: center;

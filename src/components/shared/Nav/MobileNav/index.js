@@ -25,7 +25,7 @@ const Nav = props => {
           </a>
         </div>
       )}
-      <MobileMenu isOpen={open} customBurgerIcon={ <img src={hamburger} /> } right width={ '70%' } >
+      <MobileMenu isOpen={open} customBurgerIcon={ <img src={hamburger} /> } right width={ '45%' } >
         <nav>
           <ul >
             <NavItem onClick={closeMenu} active={props.active === 'team'}>

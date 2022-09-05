@@ -56,7 +56,7 @@ export const taglineClass = css`
   letter-spacing: 2px;
 
   @media (max-width: ${theme.breakpoints.large}px) {
-    font-size: 12px;
+    font-size: 18px;
   }
 `;
 

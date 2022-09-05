@@ -13,12 +13,24 @@ export const clientsContainerClass = css`
   box-sizing: border-box;
   align-items: center;
   margin-top: 10vh;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    flex-direction: column;
+  }
 `;
 
 export const clientDetailsClass = css`
   width: 35%;
   padding-right: 40px;
   border-right: 1px solid ${theme.colors.white};
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    width: 100%;
+    border-right: 0;
+    padding-right: 0;
+    text-align: center;
+    padding-top: 25px;
+  }
 `;
 
 export const headerClass = css`
@@ -31,6 +43,10 @@ export const clientDescriptionClass = css`
   color: ${theme.colors.white};
   margin-top: 15px;
   font-family: ${theme.fonts.nexaLight};
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    display: none;
+  }
 `;
 
 export const clientLogsClass = css`
@@ -43,5 +59,12 @@ export const clientLogsClass = css`
   img {
     height: 3vw;
     width: auto;
+  }
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    width: 100%;
+    img {
+      height: 9vw;
+    }
   }
 `;

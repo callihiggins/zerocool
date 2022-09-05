@@ -20,6 +20,9 @@ export const textClass = css`
     color: ${theme.colors.blue};
   }
 
+  @media (max-width: ${theme.breakpoints.large}px) {
+    font-size: 7.5vw;
+  }
 `;
 
 export const footNotesContainerClass = css`

@@ -5,7 +5,6 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import { withRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import ApolloClient  from 'apollo-boost';
 import { ApolloProvider } from '@apollo/react-hooks';
@@ -41,7 +40,6 @@ root.render(
       <ThemeProvider theme={theme}>
         <Router>
           <ScrollToTop />
-
           <Routes>
             { initGA && <Route element={<GoogleAnalytics />} /> }
             <Route exact path="/" element={<Home />} />

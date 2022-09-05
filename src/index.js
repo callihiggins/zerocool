@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import {
   BrowserRouter as Router,
   Routes,
   Route,
 } from "react-router-dom";
+import { withRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import ApolloClient  from 'apollo-boost';
 import { ApolloProvider } from '@apollo/react-hooks';
+import ScrollToTop from './components/shared/scrollToTop';
 import ReactGA from "react-ga4";
 import GoogleAnalytics from './GoogleAnalytics'
 import theme from './theme'
@@ -38,6 +40,8 @@ root.render(
     <ApolloProvider client={client}>
       <ThemeProvider theme={theme}>
         <Router>
+          <ScrollToTop />
+
           <Routes>
             { initGA && <Route element={<GoogleAnalytics />} /> }
             <Route exact path="/" element={<Home />} />

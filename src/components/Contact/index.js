@@ -11,8 +11,10 @@ const Contact = () => {
     <>
       <Nav active="contact"></Nav>
       <div css={styles.contactContainerClass}>
-        <div css={sharedstyles.titleBannerClass}>Contact Us</div>
-        <div css={styles.subHeaderClass}>Fill out the form below and we'll get in touch</div>
+        <div css={styles.headerClass}>
+          <div css={styles.textClass}>Say<br />hello</div>
+          <div css={styles.subHeaderClass}>We’d love to chat! Just fill out the form and we will be in touch.</div>
+        </div>
         <Form />
       </div>
       <Footer />

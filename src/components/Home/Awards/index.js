@@ -2,7 +2,6 @@
   import React from 'react';
   import { css } from '@emotion/react'
   import Slide from 'react-reveal/Slide';
-  import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
   import * as styles from  './styles';
   import * as sharedstyles from  '../../shared/styles';
   import Aspen from '../../../assets/images/aspen.png';

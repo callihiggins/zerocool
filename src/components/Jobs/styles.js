@@ -27,14 +27,56 @@ export const jobsContainerClass = css`
   margin: 0 auto;
   gap: 40px;
 
-  // PUT IN WHEN THERE ARE MORE PEOPLE
-  // &:after {
-  //   content: "";
-  //   flex: auto;
-  // }
-
   @media (max-width: ${theme.breakpoints.large}px) {
     justify-content: center;
+  }
+`;
+
+export const textClass = css`
+  color: ${theme.colors.navy};
+  font-size: 12vw;
+  width: 80%;
+  text-indent: -140px;
+  position: relative;
+  margin-left: 135px;
+  line-height: 9vw;
+  @media (max-width: ${theme.breakpoints.large}px) {
+    width: 100%;
+    font-size: 60px;
+    line-height: 50px;
+    text-indent: 0;
+    margin: 0 auto;
+    padding: 0;
+  }
+`;
+
+export const headerClass = css`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  border-bottom: 1px solid ${theme.colors.blue};
+  padding-top: ${theme.componentHeights.nav}px;
+  padding-top: 70px;
+  padding-bottom: 20px;
+  
+  @media (max-width: ${theme.breakpoints.large}px) {
+    padding-top: 40px;
+  }
+
+`;
+
+export const descriptionClass = css`
+  width: 35%;
+  justify-content: space-between;
+  color: ${theme.colors.navy};
+  font-family: ${theme.fonts.nexaLight};
+  font-size: 28px;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    display: none;
   }
 `;
 

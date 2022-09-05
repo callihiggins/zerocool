@@ -30,7 +30,10 @@ const Jobs = () => {
       <Nav active="jobs"></Nav>
       <JobsContainer hasJobs={jobsData?.length > 0}>
         {jobsData?.length > 0 && (
-          <div css={sharedstyles.titleBannerClass}>We're hiring!</div>
+          <div css={styles.headerClass}>
+            <div css={styles.textClass}>We're <br />hiring!</div>
+            <div css={styles.descriptionClass}>Join our fully remote team, yadda yadda something or other</div>
+          </div>
         )}
         {jobsData?.length < 1 && (
           <div css={styles.jobTitleClass}>We just hired a few new team members, but check back later to join our growing team!</div>

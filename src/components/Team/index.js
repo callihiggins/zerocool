@@ -29,13 +29,27 @@ const Team = () => {
 	const teamData = data?.teamMemberCollection?.items.map(
     data => <Person data={data} />
   )
+
+  const manyPeople = []
+
+  for (let i = 0; i < 9; i++) {
+    manyPeople.push(teamData)
+  }
   return (
     <>
       <Nav active="team"></Nav>
       <div css={styles.aboutContainerClass}>
-        <div css={sharedstyles.titleBannerClass}>Meet our team</div>
+        <div css={styles.headerClass}>
+          <div css={styles.textClass}>Our<br />team</div>
+          <div css={styles.descriptionClass}>
+            <div>We are a working collective of producers, directors, editors, yadda yadda yadda.</div>
+            <button css={styles.buttonClass} href="/jobs" role="button">Join us!</button>
+          </div>
+
+        </div>
         <div css={styles.peopleContainerClass}>
-          {teamData}
+          
+          {manyPeople}
         </div>
       </div>
       <Footer />

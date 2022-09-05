@@ -38,6 +38,7 @@ export const NavUl = styled.ul`
   text-align: center;
   justify-content: flex-start;
   padding-left: 0;
+  margin-bottom: 0;
 
   @media (max-width: ${theme.breakpoints.large}px) {
       width: ${props => props.fixedNav ? `calc(100% - 62px)` : `100%`};

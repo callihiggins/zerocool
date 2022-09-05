@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { css } from '@emotion/react'
 import { cx } from '@emotion/css'
-import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 import TextTransition, { presets } from "react-text-transition";
 import Modal from 'react-modal';
 import 'react-responsive-modal/styles.css';

@@ -18,7 +18,7 @@ const Footer = props => (
       </div>
       <div css={styles.rightSideClass}>
         <a href="mailto:info@zerocool.tv">info@zerocool.tv</a>
-        <span>Producing in New York & Los Angeles</span>
+        <span>Located in NYC & LA</span>
       </div>
     </BottomContainer>
   </FooterContainer>

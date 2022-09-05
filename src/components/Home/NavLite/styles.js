@@ -12,7 +12,7 @@ export const HeaderContainer = styled.div`
   background:  ${props => props.backgroundColor || 'transparent'};
   z-index: 120;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 40px;
   justify-content: center;
   position: relative;
 

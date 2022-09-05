@@ -42,5 +42,12 @@ export const buttonClass = css`
   border: 0;
   text-decoration: none;
   text-align: center;
+  border: 1px solid ${theme.colors.white};
+  border-radius: 3px;
+
+  &:hover {
+    text-decoration: none;
+    color: ${theme.colors.navy};
+  }
 `;
 

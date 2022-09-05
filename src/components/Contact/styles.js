@@ -8,22 +8,64 @@ export const contactContainerClass = css`
 
   @media (max-width: ${theme.breakpoints.large}px) {
     min-height: calc(100vh - 240px);
+    padding-top: 40px;
+  }
+`;
+
+export const textClass = css`
+  color: ${theme.colors.navy};
+  font-size: 12vw;
+  width: 80%;
+  text-indent: -140px;
+  position: relative;
+  margin-left: 135px;
+  line-height: 9vw;
+  padding-top: 70px;
+  padding-bottom: 20px;
+  @media (max-width: ${theme.breakpoints.large}px) {
+    width: 100%;
+    font-size: 60px;
+    line-height: 50px;
+    text-indent: 0;
+    margin: 0 auto;
+    padding: 0;
+  }
+`;
+
+export const headerClass = css`
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid ${theme.colors.blue};
+  
+  @media (max-width: ${theme.breakpoints.large}px) {
+    flex-direction: column;
+    width: 80%;
   }
 `;
 
 export const subHeaderClass = css`
   font-family: ${theme.fonts.nexaLight};
-  padding: 15px;
-  font-size: 18px;
-  text-align: center;
+  padding: 15px 0;
+  font-size: 28px;
+  text-align: right;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    text-align: left;
+  }
 `;
 
 export const formContainerClass = css`
-  width: 70%;
+  width: 40%;
   margin: 0 auto;
   margin-top: 40px;
   color: ${theme.colors.navy};
   font-family: ${theme.fonts.nexaLight};
+  border: 1px solid  ${theme.colors.navy};
+  border-radius: 3px;
+  padding: 20px;
 
   label {
     display: block;

@@ -20,11 +20,11 @@ const Nav = props => {
         </div>
         <NavEl>
           <NavUl>
-            <NavItem active={props.active === 'jobs'}>
-              <Link to="/jobs">Jobs</Link>
-            </NavItem>
             <NavItem active={props.active === 'team'} >
               <Link to="/team">Team</Link>
+            </NavItem>
+            <NavItem active={props.active === 'jobs'}>
+              <Link to="/jobs">Jobs</Link>
             </NavItem>
             <NavItem active={props.active === 'contact'}>
               <Link to="/contact">Contact</Link>

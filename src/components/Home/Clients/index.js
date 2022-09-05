@@ -1,7 +1,6 @@
 import React from 'react';
 import Slide from 'react-reveal/Slide';
 import { css } from '@emotion/react';
-import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 import * as styles from  './styles';
 import * as sharedstyles from  '../../shared/styles';
 import UninterruptedLogo from '../../../assets/images/uninterrupted-logo-white_x450.png';
@@ -19,7 +18,6 @@ const Clients = () => {
 
   return (
     <Slide left duration={1500}>
-    {/* <ParallaxProvider> */}
       <>
       <div css={styles.clientsContainerClass}>
         <div css={styles.clientDetailsClass}>
@@ -64,7 +62,6 @@ const Clients = () => {
         </div>
       </div>
       </>
-      {/* </ParallaxProvider>  */}
     </Slide>
 
   )

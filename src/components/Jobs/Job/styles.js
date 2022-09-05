@@ -20,6 +20,10 @@ export const titleClass = css`
   letter-spacing: 3px;
   min-width: 230px;
   max-width: 230px;
+  align-self: flex-start;
+  position: sticky;
+  top: 110px;
+
   div {
     background: ${theme.colors.blue};
     padding: 20px;

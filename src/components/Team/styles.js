@@ -61,7 +61,7 @@ export const buttonClass = css`
   text-align: center;
   border: 1px solid ${theme.colors.white};
   border-radius: 3px;
-  width: inherit;
+  width: fit-content;
   padding: 10px 20px;
 
   &:hover {

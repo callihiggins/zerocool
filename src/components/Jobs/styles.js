@@ -5,7 +5,7 @@ import styled from 'styled-components';
 export const JobsContainer = styled.div`
   width: 100%;
   padding-top: 70px;
-  min-height: calc(100vh - 275px);
+  min-height: calc(100vh - 243px);
   background: ${theme.colors.navy};
   color: ${theme.colors.white};
 

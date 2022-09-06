@@ -55,7 +55,7 @@ export const clientLogsClass = css`
   justify-content: space-around;
   align-items: flex-end;
   width: 65%;
-  gap: 20px;
+  gap: 30px;
   flex-wrap: wrap;
   img {
     height: 3vw;

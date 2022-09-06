@@ -64,7 +64,7 @@ export const clientLogsClass = css`
   @media (max-width: ${theme.breakpoints.large}px) {
     width: 100%;
     img {
-      height: 9vw;
+      height: 8vw;
     }
   }
 `;

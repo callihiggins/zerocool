@@ -16,6 +16,7 @@ export const clientsContainerClass = css`
 
   @media (max-width: ${theme.breakpoints.large}px) {
     flex-direction: column;
+    gap: 30px;
   }
 `;
 
@@ -54,7 +55,7 @@ export const clientLogsClass = css`
   justify-content: space-around;
   align-items: flex-end;
   width: 65%;
-  gap: 40px;
+  gap: 20px;
   flex-wrap: wrap;
   img {
     height: 3vw;

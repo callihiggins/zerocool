@@ -115,6 +115,10 @@ font-family: ${theme.fonts.nexaLight};
     font-size: 18px;
     font-family: ${theme.fonts.nexaBold};
 
+    &:hover {
+      color: ${theme.colors.white};
+    }
+
     &::after {
       content: ' | ';
     }

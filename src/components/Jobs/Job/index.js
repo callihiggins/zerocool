@@ -3,10 +3,10 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import * as styles from './styles';
 import theme from '../../../theme';
 
-const Job = ({ data }) => {
+const Job = ({ data, reference }) => {
   const { title, description } = data;
   return (
-    <div css={styles.jobContainerClass}>
+    <div css={styles.jobContainerClass} id={reference}>
       <div css={styles.titleClass}>
         <div>{title}</div>
       </div>

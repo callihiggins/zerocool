@@ -99,3 +99,38 @@ export const jobTitleClass = css`
   }
 `;
 
+export const currentOpeningsClass = css`
+font-size: 18px;
+width: 80%;
+margin: 0 auto;
+padding: 40px 0;
+border-bottom: 1px solid ${theme.colors.blue};
+// position: sticky;
+// top: 40px;
+background: ${theme.colors.navy};
+font-family: ${theme.fonts.nexaLight};
+  a {
+    color: ${theme.colors.blue};
+    text-decoration: none;
+    font-size: 18px;
+    font-family: ${theme.fonts.nexaBold};
+
+    &::after {
+      content: ' | ';
+    }
+
+    &:first-child {
+      padding-left: 5px;
+    }
+
+    &:last-child::after {
+      content: ''
+    }
+  }
+
+  a::after {
+  }
+
+
+`;
+

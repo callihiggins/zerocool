@@ -1,6 +1,7 @@
 import React from 'react';
 import Nav from '../shared/Nav';
 import Footer from '../shared/Footer';
+import { Link } from "react-router-dom";
 import { useQuery } from '@apollo/react-hooks';
 import { gql } from 'apollo-boost';
 import Person from './Person';
@@ -43,12 +44,11 @@ const Team = () => {
           <div css={styles.textClass}>Our<br />team</div>
           <div css={styles.descriptionClass}>
             <div>We are a working collective of producers, directors, editors, yadda yadda yadda.</div>
-            <button css={styles.buttonClass} href="/jobs" role="button">Join us!</button>
+            <Link to="/jobs" css={styles.buttonClass}>Join us!</Link>
           </div>
 
         </div>
         <div css={styles.peopleContainerClass}>
-          
           {manyPeople}
         </div>
       </div>

@@ -6,6 +6,19 @@ export const jobContainerClass = css`
   display: flex;
   gap: 40px;
   color: ${theme.colors.white};
+  padding: 40px 0 60px 0;
+  border-bottom: 1px solid ${theme.colors.blue};
+  padding-top: 100px;
+  margin-top: -50px;
+
+  &:first-child {
+    padding-top: 70px;
+  }
+
+  &:last-child {
+    border-bottom: 0;
+    padding-bottom: 20px;
+  }
 
   @media (max-width: ${theme.breakpoints.large}px) {
     flex-direction: column;

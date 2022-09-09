@@ -21,10 +21,27 @@ const JOBS_DATA = gql`
 }`
 
 const Jobs = () => {
+  const generateCamelCase = title =>
+  title
+  .trim()  //might need polyfill if you need to support older browsers
+  .toLowerCase()  //lower case everything
+  .replace(/([^A-Z0-9]+)(.)/ig, //match multiple non-letter/numbers followed by any character
+      function(match) { 
+          return arguments[2].toUpperCase();  //3rd index is the character we need to transform uppercase
+      }
+  );
+
   const { data } = useQuery(JOBS_DATA);
-	const jobsData = data?.jobPostingCollection?.items.map(
-    data => <Job data={data}/>
-  )
+  const jobTitles = [];
+
+	const jobsData = data?.jobPostingCollection?.items.map(data => {
+    const reference = generateCamelCase(data.title)
+    jobTitles.push({title: data.title, link: reference})
+    return <Job data={data} reference={reference}/>
+  })
+
+  const toc = jobTitles?.map(job => <a href={`#${job.link}`}>{job.title}</a>)
+
   return (
     <>
       <Nav active="jobs"></Nav>
@@ -39,9 +56,14 @@ const Jobs = () => {
           <div css={styles.jobTitleClass}>We just hired a few new team members, but check back later to join our growing team!</div>
         )}
         {jobsData?.length > 0 && (
-          <div css={styles.jobsContainerClass}>
-            {jobsData}
-          </div>
+          <>
+            {jobsData?.length > 1 && (
+            <div css={styles.currentOpeningsClass}>Our current openings:{'  '}{toc}</div>
+            )}
+            <div css={styles.jobsContainerClass}>
+              {jobsData}
+            </div>
+          </>
         )}
       </JobsContainer>
       <Footer darkMode={true} />

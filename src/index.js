@@ -5,6 +5,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import { withRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import ApolloClient  from 'apollo-boost';
 import { ApolloProvider } from '@apollo/react-hooks';

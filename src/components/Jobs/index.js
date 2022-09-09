@@ -44,7 +44,7 @@ const Jobs = () => {
           </div>
         )}
       </JobsContainer>
-      <Footer />
+      <Footer darkMode={true} />
     </>
   )
 }

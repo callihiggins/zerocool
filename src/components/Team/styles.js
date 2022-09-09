@@ -6,7 +6,8 @@ export const aboutContainerClass = css`
   width: 100%;
   padding-top: 80px;
   min-height: calc(100vh - 275px);
-  // background: ${theme.colors.navy};
+  background: ${theme.colors.navy};
+  color: ${theme.colors.white};
   @media (max-width: ${theme.breakpoints.large}px) {
     min-height: calc(100vh - 240px);
     padding-top: 40px;
@@ -20,7 +21,7 @@ export const headerClass = css`
   width: 80%;
   margin: 0 auto;
   padding-bottom: 10px;
-  border-bottom: 1px solid ${theme.colors.navy};
+  border-bottom: 1px solid ${theme.colors.blue};
   padding-top: ${theme.componentHeights.nav}px;
   padding-top: 70px;
   padding-bottom: 20px;
@@ -38,7 +39,7 @@ export const descriptionClass = css`
   width: 35%;
   font-size: 18px;
   justify-content: space-between;
-  color: ${theme.colors.navy};
+  color: ${theme.colors.white};
   font-family: ${theme.fonts.nexaLight};
   font-size: 28px;
 
@@ -58,7 +59,7 @@ export const buttonClass = css`
   border: 0;
   text-decoration: none;
   text-align: center;
-  border: 1px solid ${theme.colors.navy};
+  border: 1px solid ${theme.colors.white};
   border-radius: 3px;
   width: fit-content;
   padding: 10px 20px;
@@ -70,7 +71,7 @@ export const buttonClass = css`
 `;
 
 export const textClass = css`
-  color: ${theme.colors.navy};
+  color: ${theme.colors.blue};
   font-size: 12vw;
   width: 80%;
   text-indent: -140px;

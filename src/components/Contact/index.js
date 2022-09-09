@@ -17,7 +17,7 @@ const Contact = () => {
         </div>
         <Form />
       </div>
-      <Footer />
+      <Footer  darkMode={true}/>
     </>
   )
 }

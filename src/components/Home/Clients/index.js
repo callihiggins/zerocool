@@ -25,7 +25,7 @@ const Clients = () => {
             Our clients
           </div>
           <div css={styles.clientDescriptionClass}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            We produce in so many spaces – finance, beauty, non-profit – and help our collaborators get their stories told.
           </div>
         </div>
         <div css={styles.clientLogsClass}>

@@ -36,12 +36,11 @@ export const descriptionClass = css`
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 35%;
-  font-size: 18px;
+  width: 50%;
   justify-content: space-between;
   color: ${theme.colors.white};
   font-family: ${theme.fonts.nexaLight};
-  font-size: 28px;
+  font-size: 2vw;
 
   @media (max-width: ${theme.breakpoints.large}px) {
     display: none;
@@ -119,5 +118,21 @@ export const teamBannerClass = css`
 
   @media (max-width: ${theme.breakpoints.large}px) {
     top: 75px;
+  }
+`;
+
+export const noTeamClass = css`
+  text-align: center;
+  color: ${theme.colors.white};
+  font-size: 36px;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  width: 60%;
+  margin: 80px auto 0 auto;
+
+  @media (max-width: ${theme.breakpoints.large}px) {
+    top: 75px;
+    font-size: 28px;
+    width: 80%;
   }
 `;

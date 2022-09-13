@@ -31,11 +31,6 @@ const Team = () => {
     data => <Person data={data} />
   )
 
-  const manyPeople = []
-
-  for (let i = 0; i < 9; i++) {
-    manyPeople.push(teamData)
-  }
   return (
     <>
       <Nav active="team"></Nav>
@@ -43,14 +38,18 @@ const Team = () => {
         <div css={styles.headerClass}>
           <div css={styles.textClass}>Our<br />team</div>
           <div css={styles.descriptionClass}>
-            <div>We are a working collective of producers, directors, editors, yadda yadda yadda.</div>
+            <div>Here’s our working collective of directors, producers, and editors. We love what we do and like each other a lot!</div>
             <Link to="/jobs" css={styles.buttonClass}>Join us!</Link>
           </div>
-
         </div>
-        <div css={styles.peopleContainerClass}>
-          {manyPeople}
-        </div>
+        {teamData?.length > 1 && (
+           <div css={styles.peopleContainerClass}>
+            {teamData}
+          </div>
+        )}
+        {teamData?.length < 2 && (
+          <div css={styles.noTeamClass}>Coming soon!</div>
+        )}
       </div>
       <Footer darkMode={true}/>
     </>

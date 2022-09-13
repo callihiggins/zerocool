@@ -77,7 +77,7 @@ export const descriptionClass = css`
   width: 35%;
   justify-content: space-between;
   font-family: ${theme.fonts.nexaLight};
-  font-size: 28px;
+  font-size: 2vw;
 
   @media (max-width: ${theme.breakpoints.large}px) {
     display: none;

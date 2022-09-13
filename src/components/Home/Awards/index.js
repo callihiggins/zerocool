@@ -19,7 +19,7 @@
               Awards
             </div>
             <div css={styles.awardDescriptionClass}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Our work has been recognized across the industry. We are very proud!
             </div>
           </div>
           <div css={styles.awardLogsClass}>

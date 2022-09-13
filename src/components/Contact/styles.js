@@ -51,9 +51,10 @@ export const headerClass = css`
 export const subHeaderClass = css`
   font-family: ${theme.fonts.nexaLight};
   padding: 15px 0;
-  font-size: 28px;
+  font-size: 2vw;
   text-align: right;
-
+  width: 50%;
+  
   @media (max-width: ${theme.breakpoints.large}px) {
     text-align: left;
   }

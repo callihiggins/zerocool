@@ -49,7 +49,7 @@ const Jobs = () => {
         {jobsData?.length > 0 && (
           <div css={styles.headerClass}>
             <div css={styles.textClass}>We're <br />hiring!</div>
-            <div css={styles.descriptionClass}>Join our fully remote team, yadda yadda something or other</div>
+            <div css={styles.descriptionClass}>We love finding technical experts and creative minds. Join our team.</div>
           </div>
         )}
         {jobsData?.length < 1 && (

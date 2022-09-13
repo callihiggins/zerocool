@@ -13,7 +13,7 @@ const Contact = () => {
       <div css={styles.contactContainerClass}>
         <div css={styles.headerClass}>
           <div css={styles.textClass}>Say<br />hello</div>
-          <div css={styles.subHeaderClass}>We’d love to chat! Just fill out the form and we will be in touch.</div>
+          <div css={styles.subHeaderClass}>We live by a simple phrase... A.B.P. – Always Be Producing, so reach out and let’s chat.</div>
         </div>
         <Form />
       </div>

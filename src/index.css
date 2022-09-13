@@ -24,7 +24,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
-
+  background: #192835;
+  min-height: 100vh;
 }
 
 html {

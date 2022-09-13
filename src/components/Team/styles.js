@@ -129,7 +129,7 @@ export const noTeamClass = css`
   font-weight: 400;
   width: 60%;
   margin: 80px auto 0 auto;
-
+  min-height: calc(100vh - 700px);
   @media (max-width: ${theme.breakpoints.large}px) {
     top: 75px;
     font-size: 28px;

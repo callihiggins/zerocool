@@ -42,7 +42,7 @@ export const awardDescriptionClass = css`
   color: ${theme.colors.white};
   margin-top: 15px;
   font-family: ${theme.fonts.nexaLight};
-
+  font-size: 18px;
 
   @media (max-width: ${theme.breakpoints.large}px) {
     display: none;

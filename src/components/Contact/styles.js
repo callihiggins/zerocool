@@ -56,7 +56,7 @@ export const subHeaderClass = css`
   width: 50%;
   
   @media (max-width: ${theme.breakpoints.large}px) {
-    text-align: left;
+    display: none;
   }
 `;
 

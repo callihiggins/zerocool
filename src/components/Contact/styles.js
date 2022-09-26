@@ -107,6 +107,7 @@ export const formContainerClass = css`
     height: 100px;
     background: ${theme.colors.navy};
     font-family: ${theme.fonts.nexaLight};
+    color: ${theme.colors.white};
     font-size: 16px;
     border: 1px solid ${theme.colors.white};
     border-radius: 3px;

@@ -96,11 +96,11 @@ export const peopleContainerClass = css`
   margin: 0 auto;
   gap: 40px;
 
-  // PUT IN WHEN THERE ARE MORE PEOPLE
-  // &:after {
-  //   content: "";
-  //   flex: auto;
-  // }
+  PUT IN WHEN THERE ARE MORE PEOPLE
+  &:after {
+    content: "";
+    flex: auto;
+  }
 
   @media (max-width: ${theme.breakpoints.large}px) {
     justify-content: center;

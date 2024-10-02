@@ -23,8 +23,8 @@ const Nav = props => {
             <NavItem active={props.active === 'team'} >
               <Link to="/team">Team</Link>
             </NavItem>
-            <NavItem active={props.active === 'Blog'}>
-              <a href="/https://www.alwaysbeproducing.blog/">Blog</a>
+            <NavItem>
+              <a href="https://www.alwaysbeproducing.blog/" target="blank">Blog</a>
             </NavItem>
             <NavItem active={props.active === 'jobs'}>
               <Link to="/jobs">Jobs</Link>

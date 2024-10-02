@@ -30,7 +30,7 @@ export const photoClass = css`
 export const titleClass = css`
   padding-top: 10px;
   padding-bottom: 5px;
-  font-size: 12px;
+  font-size: 11px;
   color: ${theme.colors.navy};
   border-bottom: 1px solid ${theme.colors.navy};
   text-align: right;

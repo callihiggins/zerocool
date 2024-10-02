@@ -23,7 +23,7 @@ export const photoClass = css`
   img {
     width: 200px;
     box-shadow: 0 0 0 5px rgb(2, 204, 230) inset;
-    background: rgba(255,255,255,.9);
+    background: rgba(255,255,255,.85);
   }
 `;
 

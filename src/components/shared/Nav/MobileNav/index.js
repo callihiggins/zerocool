@@ -31,6 +31,9 @@ const Nav = props => {
             <NavItem onClick={closeMenu} active={props.active === 'team'}>
               <Link to="/team">Team</Link>
             </NavItem>
+            <NavItem onClick={closeMenu} active={props.active === 'blog'}>
+              <a href="/https://www.alwaysbeproducing.blog/">Blog</a>
+            </NavItem>
             <NavItem onClick={closeMenu} active={props.active === 'jobs'}>
               <Link to="/jobs">Jobs</Link>
             </NavItem>

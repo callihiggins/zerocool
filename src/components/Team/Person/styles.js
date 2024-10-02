@@ -19,6 +19,8 @@ export const PersonContainer = styled.div`
 
 export const photoClass = css`
   height: 200px;
+  border: 3px solid rgb(2, 204, 230);
+  background: rgba(255,255,255,.9);
   img {
     width: 200px;
   }

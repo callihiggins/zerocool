@@ -91,19 +91,19 @@ export const peopleContainerClass = css`
   display: flex;
   flex-wrap: wrap;
   padding: 40px 40px 0 40px;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 80%;
   margin: 0 auto;
   gap: 40px;
 
-  &:after {
-    content: "";
-    flex: auto;
-  }
+  // &:after {
+  //   content: "";
+  //   flex: auto;
+  // }
 
-  @media (max-width: ${theme.breakpoints.large}px) {
-    justify-content: center;
-  }
+  // @media (max-width: ${theme.breakpoints.large}px) {
+  //   justify-content: center;
+  // }
 `;
 
 export const teamBannerClass = css`

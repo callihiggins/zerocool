@@ -18,6 +18,8 @@ import Home from './components/Home';
 import Team from './components/Team';
 import Jobs from './components/Jobs';
 import Contact from './components/Contact';
+import PrivacyPolicy from './components/PrivacyPolicy';
+import TermsOfService from './components/TermsOfService';
 
 const client = new ApolloClient({
   uri: `https://graphql.contentful.com/content/v1/spaces/${process.env.REACT_APP_SPACE_ID}?access_token=${process.env.REACT_APP_CONTENTFUL_TOKEN}`
@@ -47,6 +49,8 @@ root.render(
             <Route path="/team" element={<Team />} />
             <Route path="/jobs" element={<Jobs />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-of-service" element={<TermsOfService />} />
           </Routes>
         </Router>
       </ThemeProvider>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import logoBlackText from '../../../assets/images/logo_with_black_text.png'
 import logoWhiteText from '../../../assets/images/logo_with_white_text.png';
 import * as styles from  './styles';
@@ -19,6 +20,11 @@ const Footer = props => (
       <div css={styles.rightSideClass}>
         <a href="mailto:info@zerocool.tv">info@zerocool.tv</a>
         <span>Located in NYC & LA</span>
+        <div css={styles.legalLinksClass}>
+          <Link to="/privacy-policy">Privacy Policy</Link>
+          <span css={styles.separatorClass}> | </span>
+          <Link to="/terms-of-service">Terms of Service</Link>
+        </div>
       </div>
     </BottomContainer>
   </FooterContainer>

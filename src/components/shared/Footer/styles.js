@@ -43,6 +43,8 @@ export const BottomContainer = styled.div`
 
 export const logoClass = css`
   width: 100px;
+  height: auto;
+  object-fit: contain;
 `;
 
 export const rightSideClass = css`
@@ -50,6 +52,27 @@ export const rightSideClass = css`
   flex-direction: column;
   gap: 5px;
   text-align: right;
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+    
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+`;
+
+export const legalLinksClass = css`
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0;
+`;
+
+export const separatorClass = css`
+  color: inherit;
+  margin: 0 5px;
 `;
 
 export const leftSideClass = css`

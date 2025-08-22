@@ -43,6 +43,10 @@ export const buttonContainerClass = css`
   display: flex;
   flex-direction: column;
   gap: 60px;
+  
+  @media (max-width: ${theme.breakpoints.large}px) {
+    margin-top: 30px;
+  }
 `;
 
 export const buttonClass = css`
